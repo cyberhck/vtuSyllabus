@@ -1,4 +1,7 @@
 package com.nishgtm.vtusyllabus2014;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
@@ -13,6 +16,7 @@ import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class SelectSem extends ActionBarActivity {
 	public final String getSem="SELECT _id,sem FROM syllabus WHERE branch=?";
@@ -51,6 +55,13 @@ public class SelectSem extends ActionBarActivity {
 		}catch(Exception e){
 			Log.d("mytag", e.toString());
 		}
+		try{
+		      AdView av=(AdView)findViewById(R.id.adView);
+		      AdRequest ar=new AdRequest.Builder().build();
+		      av.loadAd(ar);
+		    }catch (Exception e){
+		      Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
+		    }
 		
 	}
 

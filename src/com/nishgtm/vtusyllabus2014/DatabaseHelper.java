@@ -23,7 +23,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 			Toast.makeText(context, "starting activity populate data", Toast.LENGTH_LONG).show();
 			context.startActivity(populate);
 		}catch(Exception e){
-			Toast.makeText(context, e.toString(), Toast.LENGTH_LONG).show();
+			Toast.makeText(context, "An error occured", Toast.LENGTH_LONG).show();
 		}
 	}
 	@Override

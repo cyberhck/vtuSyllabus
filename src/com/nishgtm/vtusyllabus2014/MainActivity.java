@@ -48,7 +48,7 @@ public class MainActivity extends ActionBarActivity {
         }catch(Exception e){
           Toast.makeText(getApplicationContext(), "Please Restart Application", Toast.LENGTH_LONG).show();
         }
-        try{
+     try{
       AdView av=(AdView)findViewById(R.id.adView);
       AdRequest ar=new AdRequest.Builder().build();
       av.loadAd(ar);

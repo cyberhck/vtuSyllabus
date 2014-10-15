@@ -1462,6 +1462,7 @@ containing a value of this type.
         public static final int powered_by_google_light=0x7f020077;
     }
     public static final class id {
+        public static final int Container=0x7f08004f;
         public static final int action_bar=0x7f08002e;
         public static final int action_bar_activity_content=0x7f080027;
         public static final int action_bar_container=0x7f08002d;
@@ -1473,13 +1474,13 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f080028;
         public static final int action_menu_presenter=0x7f080029;
         public static final int action_mode_close_button=0x7f080036;
-        public static final int action_settings=0x7f080054;
+        public static final int action_settings=0x7f080057;
         public static final int activity_chooser_view_content=0x7f080037;
-        public static final int adView=0x7f08004f;
+        public static final int adView=0x7f080050;
         public static final int always=0x7f08001e;
         public static final int beginning=0x7f080023;
         public static final int book_now=0x7f080010;
-        public static final int branch=0x7f08004e;
+        public static final int branch=0x7f080051;
         public static final int buyButton=0x7f08000a;
         public static final int buy_now=0x7f08000f;
         public static final int buy_with_google=0x7f08000e;
@@ -1503,7 +1504,7 @@ containing a value of this type.
         public static final int icon=0x7f08003c;
         public static final int ifRoom=0x7f08001d;
         public static final int image=0x7f080039;
-        public static final int item=0x7f080053;
+        public static final int item=0x7f080056;
         public static final int listMode=0x7f080014;
         public static final int list_item=0x7f08003b;
         public static final int match_parent=0x7f08000c;
@@ -1512,13 +1513,14 @@ containing a value of this type.
         public static final int never=0x7f08001c;
         public static final int none=0x7f080000;
         public static final int normal=0x7f080001;
-        public static final int process=0x7f080051;
+        public static final int process=0x7f080053;
         public static final int production=0x7f080007;
         public static final int progress_circular=0x7f08002a;
         public static final int progress_horizontal=0x7f08002b;
         public static final int radio=0x7f080041;
         public static final int sandbox=0x7f080008;
         public static final int satellite=0x7f080002;
+        public static final int scrollView1=0x7f08004e;
         public static final int search_badge=0x7f080044;
         public static final int search_bar=0x7f080043;
         public static final int search_button=0x7f080045;
@@ -1530,17 +1532,18 @@ containing a value of this type.
         public static final int search_src_text=0x7f080049;
         public static final int search_voice_btn=0x7f08004d;
         public static final int selectionDetails=0x7f08000b;
-        public static final int sem=0x7f080052;
+        public static final int sem=0x7f080054;
         public static final int shortcut=0x7f080040;
         public static final int showCustom=0x7f08001a;
         public static final int showHome=0x7f080017;
         public static final int showTitle=0x7f080019;
         public static final int split_action_bar=0x7f080030;
         public static final int strict_sandbox=0x7f080009;
+        public static final int subject=0x7f080055;
         public static final int submit_area=0x7f08004b;
         public static final int tabMode=0x7f080015;
         public static final int terrain=0x7f080003;
-        public static final int textView2=0x7f080050;
+        public static final int textView2=0x7f080052;
         public static final int title=0x7f08003d;
         public static final int top_action_bar=0x7f080032;
         public static final int up=0x7f080033;
@@ -1599,18 +1602,20 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
-        public static final int activity_main=0x7f030018;
-        public static final int activity_populate_data=0x7f030019;
-        public static final int activity_select_sem=0x7f03001a;
-        public static final int activity_select_subject=0x7f03001b;
-        public static final int item_select_xml=0x7f03001c;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int activity_display_content=0x7f030018;
+        public static final int activity_main=0x7f030019;
+        public static final int activity_populate_data=0x7f03001a;
+        public static final int activity_select_sem=0x7f03001b;
+        public static final int activity_select_subject=0x7f03001c;
+        public static final int item_select_xml=0x7f03001d;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
     }
     public static final class menu {
-        public static final int main=0x7f0c0000;
-        public static final int populate_data=0x7f0c0001;
-        public static final int select_sem=0x7f0c0002;
-        public static final int select_subject=0x7f0c0003;
+        public static final int display_content=0x7f0c0000;
+        public static final int main=0x7f0c0001;
+        public static final int populate_data=0x7f0c0002;
+        public static final int select_sem=0x7f0c0003;
+        public static final int select_subject=0x7f0c0004;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1657,6 +1662,9 @@ containing a value of this type.
         public static final int action_settings=0x7f060031;
         public static final int adId=0x7f060034;
         public static final int app_name=0x7f060030;
+        public static final int applicationGray=0x7f06003a;
+        public static final int applicationGreen=0x7f06003b;
+        public static final int applicationOrange=0x7f060039;
         /**   Text for notification shown when the Android Wear apps needs to be updated. Only shown on the wearable. [CHAR LIMIT=NONE] 
          */
         public static final int common_android_wear_notification_needs_update_text=0x7f060009;
@@ -1763,6 +1771,7 @@ containing a value of this type.
         public static final int populating=0x7f060035;
         public static final int store_picture_message=0x7f060001;
         public static final int store_picture_title=0x7f060000;
+        public static final int title_activity_display_content=0x7f060038;
         public static final int title_activity_populate_data=0x7f060033;
         public static final int title_activity_select_sem=0x7f060032;
         public static final int title_activity_select_subject=0x7f060037;

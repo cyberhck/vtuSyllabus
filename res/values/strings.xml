@@ -9,5 +9,9 @@
     <string name="populating">Please wait while we initialize application for the first time</string>
     <string name="currentProcess">Processing</string>
     <string name="title_activity_select_subject">Select Subject</string>
+    <string name="title_activity_display_content">Syllabus</string>
+    <string name="applicationOrange">#dd4814</string>
+    <string name="applicationGray">#181818</string>
+	<string name="applicationGreen">#4C7523</string>
 
 </resources>
