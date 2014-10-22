@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nishgtm.vtusyllabus2014"
+    package="com.fossdevs.vtusyllabus2014"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -24,7 +24,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.fossdevs.vtusyllabus2014.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,27 +33,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SelectSem"
+            android:name="com.fossdevs.vtusyllabus2014.SelectSem"
             android:label="@string/title_activity_select_sem"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.fossdevs.vtusyllabus2014.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nishgtm.vtusyllabus2014.MainActivity" />
         </activity>
         <activity
-            android:name=".PopulateData"
+            android:name="com.fossdevs.vtusyllabus2014.PopulateData"
             android:label="@string/title_activity_populate_data"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.fossdevs.vtusyllabus2014.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nishgtm.vtusyllabus2014.MainActivity" />
         </activity>
         <activity
-            android:name=".SelectSubject"
+            android:name="com.fossdevs.vtusyllabus2014.SelectSubject"
             android:label="@string/title_activity_select_subject">
         </activity>
         <activity
-            android:name=".DisplayContent"
+            android:name="com.fossdevs.vtusyllabus2014.DisplayContent"
             android:label="@string/title_activity_display_content">
         </activity>
     </application>
