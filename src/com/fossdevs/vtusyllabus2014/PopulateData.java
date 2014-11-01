@@ -36,6 +36,7 @@ public class PopulateData extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_populate_data);
+		Toast.makeText(getApplicationContext(), "Please note, only basic science's syllabus is revealed as of now as per 2014 scheme", Toast.LENGTH_LONG).show();
 		DatabaseHelper dbhelper=new DatabaseHelper(getApplicationContext());
 		SQLiteDatabase db=dbhelper.getWritableDatabase();
 		TextView tv=(TextView) findViewById(R.id.process);

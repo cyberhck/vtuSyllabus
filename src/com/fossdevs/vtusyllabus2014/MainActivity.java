@@ -23,7 +23,6 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(getApplicationContext(), "Please note, only basic science's syllabus is revealed as of now as per 2014 scheme", Toast.LENGTH_LONG).show();
         try{
             DatabaseHelper db=new DatabaseHelper(getApplicationContext());
             SQLiteDatabase database=db.getWritableDatabase();
