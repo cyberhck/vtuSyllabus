@@ -65,7 +65,7 @@ public class PopulateData extends ActionBarActivity {
 		db.execSQL(syllabusPopulate13);
 		db.execSQL(syllabusPopulate14);
 		tv.setText("Everything Complete!");
-		Toast.makeText(getApplicationContext(), "Application Initialized! Please Restart Application", Toast.LENGTH_LONG).show();
+		finish();
 		
 	}
 	@Override

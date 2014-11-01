@@ -3,7 +3,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 	public static String DB_NAME="vtusyllabus";
@@ -20,10 +19,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		try{
 			Intent populate=new Intent(context, PopulateData.class);
 			populate.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			Toast.makeText(context, "starting activity populate data", Toast.LENGTH_LONG).show();
 			context.startActivity(populate);
 		}catch(Exception e){
-			Toast.makeText(context, "An error occured", Toast.LENGTH_LONG).show();
 		}
 	}
 	@Override

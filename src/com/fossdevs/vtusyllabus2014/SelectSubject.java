@@ -16,7 +16,6 @@ import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class SelectSubject extends ActionBarActivity {
 	public final String getSubjects="SELECT syllabus._id,syllabus.subjectCode,subject.subjectName FROM syllabus,subject WHERE syllabus.subjectCode=subject.subjectCode AND syllabus.branch=";
@@ -61,7 +60,7 @@ public class SelectSubject extends ActionBarActivity {
 		      AdRequest ar=new AdRequest.Builder().build();
 		      av.loadAd(ar);
 		    }catch (Exception e){
-		      Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
+		      
 		    }
 
 	}

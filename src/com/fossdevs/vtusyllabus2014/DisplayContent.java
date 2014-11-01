@@ -15,7 +15,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class DisplayContent extends ActionBarActivity {
 	final String getStatus="SELECT * FROM status WHERE topic=?";
@@ -101,14 +100,14 @@ public class DisplayContent extends ActionBarActivity {
 			dummyTextView.setPadding(0, 0, 0, 70);
 			v.addView(dummyTextView);
 		}catch (Exception e){
-			Toast.makeText(getApplicationContext(), "An error occured! Please restart application", Toast.LENGTH_LONG).show();
+			
 		}
         try{
       AdView av=(AdView)findViewById(R.id.adView);
       AdRequest ar=new AdRequest.Builder().build();
       av.loadAd(ar);
     }catch (Exception e){
-      Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
+      
     }
 
 }

@@ -15,7 +15,6 @@ import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class SelectSem extends ActionBarActivity {
 	public final String getSem="SELECT _id,sem FROM syllabus WHERE branch=?";
@@ -59,7 +58,7 @@ public class SelectSem extends ActionBarActivity {
 		      AdRequest ar=new AdRequest.Builder().build();
 		      av.loadAd(ar);
 		    }catch (Exception e){
-		      Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
+		      
 		    }
 		
 	}

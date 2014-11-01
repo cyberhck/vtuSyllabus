@@ -19,9 +19,14 @@ import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
   public final String getBranchSql="SELECT * FROM syllabus,branch WHERE syllabus.branch=branch.branch GROUP BY syllabus.branch";
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+	  super.onCreate(savedInstanceState);
+	  
+  };
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onResume() {
+        super.onResume();
         setContentView(R.layout.activity_main);
         try{
             DatabaseHelper db=new DatabaseHelper(getApplicationContext());
@@ -32,27 +37,26 @@ public class MainActivity extends ActionBarActivity {
             ListView lv=(ListView)findViewById(R.id.branch);
             Adapter adapter=new SimpleCursorAdapter(getBaseContext(), R.layout.item_select_xml, c, from, to,1);
             lv.setAdapter((ListAdapter)adapter);
-          lv.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-        @Override
-        public void onItemClick(AdapterView<?> arg0, View view, int pos,long arg3) {
-          c.moveToPosition(pos);
-          String branch=c.getString(c.getColumnIndex("branch"));
-          Intent subjectChooser=new Intent(getApplicationContext(),SelectSem.class);
-          Bundle extras=new Bundle();
-          extras.putString("BRANCH", branch);
-          subjectChooser.putExtras(extras);
-          startActivity(subjectChooser);
-        }
+            lv.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            	@Override
+            	public void onItemClick(AdapterView<?> arg0, View view, int pos,long arg3) {
+		        c.moveToPosition(pos);
+		        String branch=c.getString(c.getColumnIndex("branch"));
+		        Intent subjectChooser=new Intent(getApplicationContext(),SelectSem.class);
+		        Bundle extras=new Bundle();
+		        extras.putString("BRANCH", branch);
+		        subjectChooser.putExtras(extras);
+		        startActivity(subjectChooser);
+            	}
       });
         }catch(Exception e){
-          Toast.makeText(getApplicationContext(), e.toString()+"Please Restart Application", Toast.LENGTH_LONG).show();
+          
         }
      try{
       AdView av=(AdView)findViewById(R.id.adView);
       AdRequest ar=new AdRequest.Builder().build();
       av.loadAd(ar);
     }catch (Exception e){
-      Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
     }
     }
     @Override
