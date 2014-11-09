@@ -102,13 +102,13 @@ public class DisplayContent extends ActionBarActivity {
 		}catch (Exception e){
 			
 		}
-        try{
-      AdView av=(AdView)findViewById(R.id.adView);
-      AdRequest ar=new AdRequest.Builder().build();
-      av.loadAd(ar);
-    }catch (Exception e){
+        //try{//no ads for now in this page
+      //AdView av=(AdView)findViewById(R.id.adView);
+      //AdRequest ar=new AdRequest.Builder().build();
+      //av.loadAd(ar);
+    //}catch (Exception e){
       
-    }
+    //}
 
 }
 
